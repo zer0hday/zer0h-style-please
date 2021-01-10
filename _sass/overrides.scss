@@ -1,0 +1,38 @@
+// Custom styling overrides
+
+code {
+    background: #272822;
+    font-size: 1rem;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 1rem;
+    padding: 3px 10px;
+}
+
+.highlight {
+    table, th, tr, td {
+        border: none;
+        width: auto;
+        padding: 0;
+    }
+    
+    pre, span {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        margin: 0;
+    }
+
+    .rouge-gutter {
+        border-right: 1px solid #7b8078;
+        padding-right: 5px;
+        color: #7b8078;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;    
+    }
+    
+    .rouge-code {
+        padding-left: 8px;    
+    }   
+}

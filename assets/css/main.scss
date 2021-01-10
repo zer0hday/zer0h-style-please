@@ -2,3 +2,51 @@
 ---
 
 @import "no-style-please";
+@import "overrides";
+
+{% if site.theme_config.pygments %}
+    {% case site.theme_config.pygments %}
+        {% when "autumn" %}
+            @import "vendor/autumn.scss";
+        {% when "borland" %}
+            @import "vendor/borland.scss";
+        {% when "bw" %}
+            @import "vendor/bw.scss";
+        {% when "colorful" %}
+            @import "vendor/colorful.scss";
+        {% when "default" %}
+            @import "vendor/default.scss";
+        {% when "emacs" %}
+            @import "vendor/emacs.scss";  
+        {% when "friendly" %}
+            @import "vendor/friendly.scss";   
+        {% when "fruity" %}
+            @import "vendor/fruity.scss";   
+        {% when "github" %}
+            @import "vendor/github.scss";
+        {% when "manni" %}
+            @import "vendor/manni.scss";      
+        {% when "monokai" %}
+            @import "vendor/monokai.scss";      
+        {% when "murphy" %}
+            @import "vendor/murphy.scss";   
+        {% when "native" %}
+            @import "vendor/native.scss";    
+        {% when "pastie" %}
+            @import "vendor/pastie.scss"; 
+        {% when "perldoc" %}
+            @import "vendor/perldoc.scss";  
+        {% when "tango" %}
+            @import "vendor/tango.scss";   
+        {% when "trac" %}
+            @import "vendor/trac.scss";  
+        {% when "vim" %}
+            @import "vendor/vim.scss";  
+        {% when "vs" %}
+            @import "vendor/vs.scss";
+        {% when "zenburn" %}
+            @import "vendor/zenburn.scss";    
+        {% else %}
+            {% break %}
+    {% endcase %}
+{% endif %}

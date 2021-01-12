@@ -1,23 +1,30 @@
-title: no style, please! # name of the site
-author: Riccardo Graziosi # name of site's author
-email: riccardo.graziosi97@gmail.com # email of site's author
-url: https://riggraz.dev # root address of the site
-baseurl: "/no-style-please" # subpath of the site, e.g. "/blog"
+title: zer0h style, please! # name of the site
+author: Rohan Littler # name of site's author
+email: contact@rohanlittler.co.uk # email of site's author
+url: https://zer0hday.github.io # root address of the site
+baseurl: "" # subpath of the site, e.g. "/blog"
 description: > # description of the site (multiple lines allowed)
   A (nearly) no-CSS, fast, minimalist Jekyll theme.
 
-permalink: /:slug.html
-
-favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+#favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
-theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+remote_theme: zer0hday/zer0h-style-please
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
+  appearance: "light" # can be "light", "dark" or "auto"
+  back_home_text: "Home" # customize text for homepage link in post layout
+  date_format: "%d %B, %Y" # date shown in posts
+  date_format_short: "%d/%m/%y" # short date format shown in post lists/archive
+  show_description: true # show blog description in home page
+  pygments: "monokai" # syntax highlighting design -- choose any from https://jwarby.github.io/jekyll-pygments-themes/languages/ruby.html
+
+markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 sass:
   style: :compressed
